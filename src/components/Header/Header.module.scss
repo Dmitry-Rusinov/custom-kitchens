@@ -1,0 +1,106 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1142px;
+  height: 164px;
+  //border: 1px solid gray;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.9);
+
+  .grid {
+    display: grid;
+    height: 88px;
+    width: 100%;
+    grid-template-columns: repeat(5, auto);
+    //border: 1px solid gray;
+    justify-content: space-between;
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+      border-right: 0.5px solid $main-red;
+
+      .header_title {
+        @include text600(
+          $font-size: 12px,
+          $line-height: 16px,
+          $text-transform: uppercase
+        );
+        margin-top: 8px;
+      }
+      .info_text {
+        @include text600(
+          $font-size: 15px,
+          $line-height: 25px,
+          $text-transform: none
+        );
+        margin: auto;
+      }
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+        align-items: end;
+        border: none;
+      }
+
+      &:nth-child(3) {
+        flex-direction: row;
+        justify-content: space-between
+      }
+
+      .map_button {
+        @include button;
+        background-image: url(../../images/map-button.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 42px;
+        margin-right: 16px;
+        @include button-hover
+      }
+
+      .calculate_button {
+        @include button;
+        @include button-hover;
+        width: 201px;
+        height: 49px;
+        background-color: $main-red;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        line-height: 100%;
+        font-weight: 700;
+        text-align: center;
+        margin: auto;
+      }
+
+      .callback_button {
+        @include button;
+        @include button-hover;
+        width: 131px;
+        height: 25px;
+        color: $main-red;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-top: 4px;
+      }
+
+      .tel {
+        @include text600($font-size: 20px, $line-height: 1.25);
+
+        &:first-of-type {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}

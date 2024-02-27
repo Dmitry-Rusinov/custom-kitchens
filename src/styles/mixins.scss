@@ -1,0 +1,58 @@
+@import './constants.scss';
+
+@mixin button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+@mixin button-hover {
+  &:hover {
+    opacity: .7;
+  }
+}
+
+@mixin text400(
+  $font-size: 15px,
+  $font-weight: $fw-regular,
+  $line-height: normal,
+  $text-transform: lowercase,
+) {
+  margin: 0;
+  font-size: $font-size;
+  font-weight: $font-weight; //400
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
+@mixin text600(
+  $font-size: 15px,
+  $font-weight: $fw-medium,
+  $line-height: normal,
+  $text-transform: lowercase,
+) {
+  margin: 0;
+  font-size: $font-size;
+  font-weight: $font-weight; //600
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
+@mixin text800(
+  $font-size: 15px,
+  $font-weight: $fw-bold,
+  $line-height: normal,
+  $text-transform: lowercase,
+) {
+  margin: 0;
+  font-size: $font-size;
+  font-weight: $font-weight; //800
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
