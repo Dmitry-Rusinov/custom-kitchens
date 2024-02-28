@@ -1,0 +1,22 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.button {
+  @include button;
+  @include button-hover;
+  width: 201px;
+  height: 49px;
+  border-radius: 5px;
+  border: 1px solid $main-red;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 20px;
+
+  &_white {
+    background-color: $main-red;
+    color: white;
+  }
+}
