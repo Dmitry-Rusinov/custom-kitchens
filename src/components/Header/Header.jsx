@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import Navigation from '../Navagation/Navigation';
+import Navigation from '../Main/Navagation/Navigation';
 
 import logo from '../../images/logo.svg';
 
 function Header() {
   return (
     <div style={{width: '100%', background: 'rgba(255, 255, 255, 0.9)'}}>
-    <div className={styles.container}>
+    <header className={styles.container}>
       <div className={styles.grid}>
         <div className={styles.block}>
           <img src={logo} alt="Логотип" />
@@ -30,7 +30,7 @@ function Header() {
         </div>
       </div>
       <Navigation />
-    </div>
+    </header>
     </div>
     
   )

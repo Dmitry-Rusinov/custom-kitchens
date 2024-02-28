@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './KitchenCards.module.scss';
 import Card from '../Card/Card';
 
-import { dataCard } from '../utils/dataCard'; 
+import { dataCard } from '../../utils/dataCard'; 
 
 function KitchenCards() {
   return (

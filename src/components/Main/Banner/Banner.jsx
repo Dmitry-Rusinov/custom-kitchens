@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Banner.module.scss';
 import Stock from '../Stock/Stock';
 
-import priceIcon from '../../images/price-icon.svg';
-import warrantyIcon from '../../images/warranty-icon.svg';
-import deadlineIcon from '../../images/deadline-icon.svg'
+import priceIcon from '../../../images/price-icon.svg';
+import warrantyIcon from '../../../images/warranty-icon.svg';
+import deadlineIcon from '../../../images/deadline-icon.svg'
 
 function Banner() {
   return (

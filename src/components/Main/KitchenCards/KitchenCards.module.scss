@@ -1,12 +1,12 @@
-@import "../../styles/constants.scss";
-@import "../../styles/mixins.scss";
+@import "../../../styles/constants.scss";
+@import "../../../styles/mixins.scss";
 
 .wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 2154px;
-  background-image: url(../../images/KitchenCard-wrapper.png);
+  background-image: url(../../../images/KitchenCard-wrapper.png);
   margin: 80px auto 140px;
 
   .container {

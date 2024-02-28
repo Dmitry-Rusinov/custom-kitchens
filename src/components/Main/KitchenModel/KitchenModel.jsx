@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './KitchenModel.module.scss'
 
-import model1 from '../../images/kitchenModel/model-1.png';
-import model2 from '../../images/kitchenModel/model-2.png';
-import model3 from '../../images/kitchenModel/model-3.png';
+import model1 from '../../../images/kitchenModel/model-1.png';
+import model2 from '../../../images/kitchenModel/model-2.png';
+import model3 from '../../../images/kitchenModel/model-3.png';
 
 import Button from '../Button/Button';
 

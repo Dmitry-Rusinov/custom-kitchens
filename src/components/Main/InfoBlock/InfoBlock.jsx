@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './InfoBlock.module.scss';
 
-import infoIcon1 from '../../images/info-icon1.svg';
-import infoIcon2 from '../../images/info-icon2.svg';
-import infoIcon3 from '../../images/info-icon3.svg';
-import infoIcon4 from '../../images/info-icon4.svg';
+import infoIcon1 from '../../../images/info-icon1.svg';
+import infoIcon2 from '../../../images/info-icon2.svg';
+import infoIcon3 from '../../../images/info-icon3.svg';
+import infoIcon4 from '../../../images/info-icon4.svg';
 
 function InfoBlock() {
   return (

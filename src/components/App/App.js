@@ -1,18 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header';
-import Banner from '../Banner/Banner';
-import InfoBlock from '../InfoBlock/InfoBlock';
-import KitchenCards from '../KitchenCards/KitchenCards';
-import KitchenModel from '../KitchenModel/KitchenModel';
+import Main from '../Main/Main';
 
 function App() {
   return (
     <div className="wrapper">
       <Header />
-      <Banner />
-      <InfoBlock />
-      <KitchenCards />
-      <KitchenModel />
+      <Main />
     </div>
   );
 }

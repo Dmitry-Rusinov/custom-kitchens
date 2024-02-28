@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Stock.module.scss';
 import ReactInputMask from 'react-input-mask';
-import { useFormValidation } from '../utils/useFormValidation';
+import { useFormValidation } from '../../utils/useFormValidation';
 
 function Stock() {
   const { errors, values, isValid, handleChange } = useFormValidation();
