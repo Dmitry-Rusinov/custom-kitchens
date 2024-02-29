@@ -1,0 +1,75 @@
+@import "../../../styles/constants.scss";
+@import "../../../styles/mixins.scss";
+
+.slyder {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 738px;
+
+  .image {
+    height: 617px;
+    width: 569px;
+    background-size: cover;
+  }
+
+  .person_info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    margin: 20px 0 16px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px 0px rgba(150, 150, 150, 0.25);
+
+    span {
+      @include text400($font-size: 20px, $line-height: 25px);
+      text-transform: none;
+      text-align: start;
+      padding: 30px 20px;
+    }
+  }
+
+  .arrow {
+    @include button;
+    @include button-hover;
+    position: absolute;
+    top: 40%;
+    left: -25px;
+    width: 99px;
+    height: 99px;
+    background-image: url(../../../images/arrow.svg);
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 23px 0px rgba(148, 148, 148, 0.17);
+    z-index: 2;
+
+    &:last-of-type {
+      transform: rotate(180deg);
+      left: 495px;
+    }
+  }
+
+  article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+
+    &.activeSlyde {
+      opacity: 1;
+      transform: translate(0);
+    }
+
+    &.lastSlyde {
+      transform: translate(-100%);
+    }
+
+    &.nextSlyde {
+      transform: translate(100%);
+    }
+  }
+
+}

@@ -60,6 +60,10 @@
       line-height: normal;
       align-items: center;
       color: white;
+
+      &:disabled {
+        opacity: 0.5;
+      }
     }
   }
 }

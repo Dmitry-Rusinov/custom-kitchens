@@ -1,0 +1,96 @@
+@import "../../../styles/constants.scss";
+@import "../../../styles/mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1137px;
+  height: 932px;
+  margin: 98px auto 104px;
+
+  .title {
+    @include text800($font-size: 48px, $line-height: 1.15);
+    text-transform: none;
+    margin-bottom: 84px;
+
+    &::after {
+      content: "дизайн кухни?";
+      color: $main-red;
+      padding-bottom: 21px;
+      border-bottom: 6px solid $main-red;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 569px 451px;
+    gap: 80px;
+    overflow: hidden;
+
+    .info_block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      .aside_title {
+        @include text800($font-size: 36px, $line-height: 1.36);
+        text-transform: uppercase;
+
+        &::after {
+          content: "дизайнерам!";
+          color: $main-red;
+        }
+      }
+
+      p {
+        @include text400($font-size: 20px, $line-height: 1.53);
+        text-transform: none;
+        margin: 15px 0 10px;
+      }
+
+      span {
+        display: flex;
+        @include text400($font-size: 18px, $line-height: 1.37);
+        text-transform: none;
+        margin-top: 15px;
+
+        &:last-of-type {
+          margin-bottom: 20px;
+        }
+
+        img {
+          align-self: center;
+          margin-right: 15px;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 23px 0px rgba(148, 148, 148, 0.17);
+        width: 339px;
+        height: 100%;
+
+        .input {
+          width: 100%;
+          height: 49px;
+          border: 1px solid rgb(232, 232, 232);
+          background-color: rgb(249, 249, 249);
+          border-radius: 4px;
+          padding: 10px 25px;
+
+          &::-webkit-input-placeholder {
+            @include text400($font-size: 17px, $line-height: 1.37);
+            color: rgb(125, 125, 125);
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,11 +12,13 @@
   font-size: 14px;
   line-height: normal;
   text-align: center;
-  margin-top: 15px;
-  margin-left: 20px;
 
   &_white {
     background-color: $main-red;
     color: white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }

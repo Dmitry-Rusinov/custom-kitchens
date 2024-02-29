@@ -1,4 +1,4 @@
-export const dataCard = [
+const dataCard = [
   {
     material: 'пластик',
     accessories: 'Braun',
@@ -80,4 +80,30 @@ export const dataCard = [
     image: 'https://avatars.mds.yandex.net/i?id=6fd8ac41c20b7386493665fa295f82aa_sr-5669589-images-thumbs&n=13',
     id: '9'
   },
-]
+];
+
+const designerData = [
+  {
+    id: '1',
+    name: 'Юлия',
+    position: 'Дизайнер кухонь',
+    employment: '2013',
+    image: 'https://plus.unsplash.com/premium_photo-1708275305451-1c28a9d2b29c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D'
+  },
+  {
+    id: '2',
+    name: 'Екатерина',
+    position: 'Дизайнер кухонь',
+    employment: '2011',
+    image: 'https://images.unsplash.com/photo-1708616748538-bdd66d6a9e25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5NXx8fGVufDB8fHx8fA%3D%3D'
+  },
+  {
+    id: '3',
+    name: 'Светлана',
+    position: 'Дизайнер кухонь',
+    employment: '2015',
+    image: 'https://images.unsplash.com/photo-1708607728910-b00e0c1be0af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDl8fHxlbnwwfHx8fHw%3D'
+  },
+];
+
+export { dataCard, designerData };

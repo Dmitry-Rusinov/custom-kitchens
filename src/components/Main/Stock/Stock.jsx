@@ -4,7 +4,7 @@ import ReactInputMask from 'react-input-mask';
 import { useFormValidation } from '../../utils/useFormValidation';
 
 function Stock() {
-  const { errors, values, isValid, handleChange } = useFormValidation();
+  const { values, isValid, handleChange } = useFormValidation();
 
   return (
     <div className={styles.container}>
@@ -24,7 +24,7 @@ function Stock() {
           onChange={handleChange}
           required
         />
-        <button className={styles.callback_button}>Получить скидку</button>
+        <button disabled={!isValid} className={styles.callback_button}>Получить скидку</button>
       </form>
       
         

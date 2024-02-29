@@ -3,6 +3,7 @@ import Banner from './Banner/Banner';
 import InfoBlock from './InfoBlock/InfoBlock';
 import KitchenCards from './KitchenCards/KitchenCards';
 import KitchenModel from './KitchenModel/KitchenModel';
+import KitchenDesign from './KitchenDesign/KitchenDesign';
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
       <InfoBlock />
       <KitchenCards />
       <KitchenModel />
+      <KitchenDesign />
     </main>
   )
 }
