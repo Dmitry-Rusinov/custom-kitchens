@@ -7,11 +7,12 @@ import KitchenDesign from './KitchenDesign/KitchenDesign';
 import KitchenService from './KitchenService/KitchenService';
 import AdvantageBlock from './AdvantageBlock/AdvantageBlock';
 import IdealKitchen from './IdealKitchen/IdealKitchen';
+import Stock from './Stock/Stock';
 
 function Main() {
   return (
     <main>
-      <Banner />
+      <Banner component={<Stock/>}/>
       <InfoBlock />
       <KitchenCards />
       <KitchenModel />

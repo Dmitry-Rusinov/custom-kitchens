@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './Banner.module.scss';
-import Stock from '../Stock/Stock';
 
 import priceIcon from '../../../images/price-icon.svg';
 import warrantyIcon from '../../../images/warranty-icon.svg';
 import deadlineIcon from '../../../images/deadline-icon.svg'
 
-function Banner() {
+function Banner({component}) {
   return (
     <div className={styles.container}>
       <div className={styles.promo_block}>
@@ -26,7 +25,7 @@ function Banner() {
           </div>
         </div>
       </div>
-      <Stock />
+      {component}
     </div>
   )
 }
