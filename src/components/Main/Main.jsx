@@ -4,6 +4,9 @@ import InfoBlock from './InfoBlock/InfoBlock';
 import KitchenCards from './KitchenCards/KitchenCards';
 import KitchenModel from './KitchenModel/KitchenModel';
 import KitchenDesign from './KitchenDesign/KitchenDesign';
+import KitchenService from './KitchenService/KitchenService';
+import AdvantageBlock from './AdvantageBlock/AdvantageBlock';
+import IdealKitchen from './IdealKitchen/IdealKitchen';
 
 function Main() {
   return (
@@ -13,6 +16,9 @@ function Main() {
       <KitchenCards />
       <KitchenModel />
       <KitchenDesign />
+      <KitchenService />
+      <AdvantageBlock />
+      <IdealKitchen />
     </main>
   )
 }
