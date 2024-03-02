@@ -2,7 +2,6 @@ import React from 'react';
 import ReactInputMask from 'react-input-mask';
 import styles from './KitchenDesign.module.scss';
 
-import { designerData } from '../../utils/dataCard';
 import Slyder from '../Slyder/Slyder';
 import Button from '../Button/Button';
 import { useFormValidation } from '../../utils/useFormValidation';

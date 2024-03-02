@@ -8,6 +8,7 @@ import KitchenService from './KitchenService/KitchenService';
 import AdvantageBlock from './AdvantageBlock/AdvantageBlock';
 import IdealKitchen from './IdealKitchen/IdealKitchen';
 import Stock from './Stock/Stock';
+import Review from './Review/Review';
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
       <KitchenService />
       <AdvantageBlock />
       <IdealKitchen />
+      <Review />
     </main>
   )
 }
