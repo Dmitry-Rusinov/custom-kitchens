@@ -20,15 +20,15 @@ function ReviewSlyder() {
     }
   }, [currentIndex, review]);
 
-  /* useEffect(() => {
+  useEffect(() => {
     let slyder = setInterval(
       () => setCurrentIndex((prevState) => prevState + 1),
-      5000
+      50000
     );
     return () => {
       clearInterval(slyder);
     };
-  }, [currentIndex]); */
+  }, [currentIndex]);
 
   const handleStarr = (rating) => {
     let arr = [];
@@ -59,7 +59,7 @@ function ReviewSlyder() {
               <h4 className={styles.name}>{name}</h4>
               <div className={styles.rating}>{handleStarr(rating)}</div>
               <p className={styles.text}>{text}</p>
-              <Button width="286px" text="Получить дизайн проект" margin="0"/>
+              <Button width="286px" text="Получить дизайн проект" margin="auto 0"/>
             </div>
             <div className={styles.image_block}>
               <img className={styles.img} src={userImage} alt="Фото пользователя" />

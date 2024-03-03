@@ -9,6 +9,11 @@ import AdvantageBlock from './AdvantageBlock/AdvantageBlock';
 import IdealKitchen from './IdealKitchen/IdealKitchen';
 import Stock from './Stock/Stock';
 import Review from './Review/Review';
+import QuestionBlock from './QuestionBlock/QuestionBlock';
+
+import bannerImg from '../../images/banner-image.png'
+import CallbackBlock from './CallbackBlock/CallbackBlock';
+
 
 function Main() {
   return (
@@ -22,6 +27,9 @@ function Main() {
       <AdvantageBlock />
       <IdealKitchen />
       <Review />
+      <Banner wrapper={bannerImg} component={<Stock/>}/>
+      <QuestionBlock />
+      <CallbackBlock />
     </main>
   )
 }

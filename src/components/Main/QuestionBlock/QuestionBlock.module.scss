@@ -1,0 +1,91 @@
+@import "../../../styles/constants.scss";
+@import "../../../styles/mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1135px;
+  height: 562px;
+  margin: 120px auto 100px;
+
+  .title {
+    @include text800($font-size: 48px, $line-height: 1.15);
+    text-transform: none;
+    margin-bottom: 114px;
+    text-align: center;
+
+    &::after {
+      content: "С радостью ответим на них!";
+      color: $main-red;
+      padding-bottom: 21px;
+      border-bottom: 6px solid $main-red;
+    }
+  }
+
+  .block {
+    display: flex;
+    margin: 0 auto;
+    height: 338px;
+    gap: 90px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: content-box;
+      padding: 14px 0;
+
+      &:last-of-type {
+        justify-content: center;
+      }
+      
+    }
+
+    .info_block {
+      display: flex;
+      width: 214px;
+      height: 75px;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 20px 0px rgba(150, 150, 150, 0.25);
+      background: rgb(255, 255, 255);
+      box-sizing: content-box;
+      align-items: center;
+
+      p {
+        @include text600($font-size: 15px, $line-height: 25px);
+        text-transform: none;
+      }
+      img {
+        margin-right: 18px;
+      }
+    }
+
+    .designer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: content-box;
+      padding: 10px;
+
+      img {
+        width: 267px;
+        height: 267px;
+        border-radius: 50%;
+      }
+
+      span {
+        @include text800($font-size: 20px, $line-height: 1.15);
+        text-transform: none;
+        text-align: center;
+
+        &::after {
+          content: "Дизайнер";
+          color: $main-red;
+        }
+      }
+    }
+
+
+  }
+}
