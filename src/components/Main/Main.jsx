@@ -13,6 +13,7 @@ import QuestionBlock from './QuestionBlock/QuestionBlock';
 
 import bannerImg from '../../images/banner-image.png'
 import CallbackBlock from './CallbackBlock/CallbackBlock';
+import MapComponent from './MapComponent/MapComponent';
 
 
 function Main() {
@@ -30,6 +31,7 @@ function Main() {
       <Banner wrapper={bannerImg} component={<Stock/>}/>
       <QuestionBlock />
       <CallbackBlock />
+      <MapComponent />
     </main>
   )
 }
