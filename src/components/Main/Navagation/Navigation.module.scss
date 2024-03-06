@@ -30,3 +30,18 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 33px;
+  
+    .link {
+      @include text400($font-size: 15px, $line-height: 20px);
+      padding-right: 26px;
+    }
+  
+    .link_active {
+      width: calc(100% - 26px);
+    }
+  }
+}

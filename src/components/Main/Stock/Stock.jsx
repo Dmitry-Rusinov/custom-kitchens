@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './Stock.module.scss';
-import ReactInputMask from 'react-input-mask';
-import { useFormValidation } from '../../utils/useFormValidation';
+import React from "react";
+import styles from "./Stock.module.scss";
+import ReactInputMask from "react-input-mask";
+import { useFormValidation } from "../../utils/useFormValidation";
 
 function Stock() {
   const { values, isValid, handleChange } = useFormValidation();
@@ -9,7 +9,9 @@ function Stock() {
   return (
     <div className={styles.container}>
       <h3>Акция</h3>
-      <p>Скидка 35% на Вашу кухню</p>
+      <p>
+        Скидка <font color="red">35%</font> на Вашу кухню
+      </p>
       <span>до 01.01.2022</span>
       <form className={styles.callback_form}>
         <ReactInputMask
@@ -24,12 +26,12 @@ function Stock() {
           onChange={handleChange}
           required
         />
-        <button disabled={!isValid} className={styles.callback_button}>Получить скидку</button>
+        <button disabled={!isValid} className={styles.callback_button}>
+          Получить скидку
+        </button>
       </form>
-      
-        
     </div>
-  )
+  );
 }
 
-export default Stock
+export default Stock;

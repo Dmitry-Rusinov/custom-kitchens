@@ -11,7 +11,6 @@ import Stock from './Stock/Stock';
 import Review from './Review/Review';
 import QuestionBlock from './QuestionBlock/QuestionBlock';
 
-import bannerImg from '../../images/banner-image.png'
 import CallbackBlock from './CallbackBlock/CallbackBlock';
 import MapComponent from './MapComponent/MapComponent';
 
@@ -28,7 +27,7 @@ function Main() {
       <AdvantageBlock />
       <IdealKitchen />
       <Review />
-      <Banner wrapper={bannerImg} component={<Stock/>}/>
+      <Banner component={<Stock/>}/>
       <QuestionBlock />
       <CallbackBlock />
       <MapComponent />

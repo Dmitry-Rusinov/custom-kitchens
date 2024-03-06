@@ -5,9 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 1142px;
+  max-width: 1142px /* clamp(360px, 59.5%, 1920px) */;
   height: 164px;
-  //border: 1px solid gray;
   margin: 20px auto;
   background: rgba(255, 255, 255, 0.9);
 
@@ -16,7 +15,6 @@
     height: 88px;
     width: 100%;
     grid-template-columns: repeat(5, auto);
-    //border: 1px solid gray;
     justify-content: space-between;
 
     .block {
@@ -54,7 +52,8 @@
 
       &:nth-child(3) {
         flex-direction: row;
-        justify-content: space-between
+        justify-content: space-between;
+        align-items: center;
       }
 
       .map_button {
@@ -62,9 +61,10 @@
         background-image: url(../../images/map-button.svg);
         background-repeat: no-repeat;
         background-position: center;
+        height: 42px;
         width: 42px;
         margin-right: 16px;
-        @include button-hover
+        @include button-hover;
       }
 
       .calculate_button {
@@ -99,6 +99,145 @@
 
         &:first-of-type {
           margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+    height: 142px;
+    margin: 15px auto 20px;
+    padding: 0 15px;
+
+    .grid {
+      height: 75px;
+
+      .block {
+        padding: 0 15px;
+
+        img {
+          width: 134px;
+          height: 44px;
+        }
+
+        .header_title {
+          @include text600($font-size: 8px, $line-height: 11px);
+        }
+
+        .info_text {
+          @include text600($font-size: 10px, $line-height: 18px);
+        }
+
+        .map_button {
+          background-size: contain;
+          height: 32px;
+          width: 32px;
+          margin-right: 12px;
+        }
+
+        .calculate_button {
+          width: 138px;
+          height: 34px;
+          font-size: 10px;
+        }
+
+        .callback_button {
+          width: 112px;
+          font-size: 12px;
+          margin-top: 0;
+        }
+
+        .tel {
+          @include text600($font-size: 14px, $line-height: 25px);
+
+          &:first-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .container {
+      height: 139px;
+      max-width: 760px;
+      flex-direction: row;
+      margin: 15px 15px 20px;
+
+      .grid {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(2, auto);
+
+        .block {
+          padding: 0;
+          border-right: none;
+          width: 146px;
+          height: 100%;
+
+          .header_title {
+            margin-top: 6px;
+          }
+
+          .info_text {
+            @include text600($font-size: 8px, $line-height: 13px);
+            margin-top: 12px;
+
+            &:last-of-type {
+              @include text600($font-size: 9px, $line-height: 1.25);
+              margin-top: 16px;
+            }
+          }
+
+          .map_button {
+            background-size: contain;
+            height: 19px;
+            width: 19px;
+            margin-right: 10px;
+            align-self: last baseline;
+          }
+
+          .burger_button {
+            @include button;
+            @include button-hover;
+            width: 36px;
+            height: 36px;
+            background-image: url(../../images/burger-button.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 13px;
+          }
+
+          .calculate_button {
+            width: 139px;
+            height: 26px;
+            font-size: 10px;
+            margin-top: 13px;
+          }
+
+          .callback_button {
+            width: 112px;
+            font-size: 12px;
+            height: 12px;
+          }
+
+          .tel {
+            @include text600($font-size: 14px, $line-height: 1);
+            margin-bottom: 6px;
+
+            &:first-of-type {
+              margin-bottom: 6px;
+            }
+          }
+
+          &:last-of-type {
+            align-items: end;
+            width: 139px;
+          }
         }
       }
     }
