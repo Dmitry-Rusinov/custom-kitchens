@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 1142px /* clamp(360px, 59.5%, 1920px) */;
+  max-width: 1142px;
   height: 164px;
   margin: 20px auto;
   background: rgba(255, 255, 255, 0.9);
@@ -109,7 +109,7 @@
   .container {
     max-width: 1000px;
     height: 142px;
-    margin: 15px auto 20px;
+    margin: 15px 16px 20px;
     padding: 0 15px;
 
     .grid {

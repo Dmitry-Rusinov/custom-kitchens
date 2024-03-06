@@ -23,6 +23,12 @@
   }
 }
 
+@media screen and (max-width: 660px) {
+  .wrapper {
+    background-position-y: -68px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .wrapper {
     background-position-y: -140px;

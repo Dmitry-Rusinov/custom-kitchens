@@ -6,7 +6,6 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 41px;
   margin: 56px auto 50px;
-  //background-color: white;
   width: 1137px;
   height: 189px;
 
@@ -14,7 +13,10 @@
     display: flex;
     width: 253px;
     flex-direction: column;
-    padding: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 57px;
+    padding-right: 57px;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0px 0px 23px 0px rgba(148, 148, 148, 0.17);
@@ -29,6 +31,63 @@
       @include text400($font-size: 20px, $line-height: 1.37);
       text-transform: none;
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    gap: 16px;
+    margin: 50px auto 60px;
+    grid-template-columns: repeat(4, 165px);
+    width: 708px;
+  
+    .block {
+      width: 165px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 22px;
+      padding-right: 22px;
+  
+      &:nth-of-type(2) {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+  
+      p {
+        @include text400($font-size: 16px, $line-height: 1.37);
+        text-transform: none;
+        text-align: center;
+      }
+
+      img {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    gap: 16px;
+    margin: 37px auto 50px;
+    grid-template-columns: repeat(2, 157px);
+    grid-template-rows: repeat(2, 170px);
+    width: 330px;
+    height: 356px;
+  
+    .block {
+      width: 157px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 15px;
+      padding-right: 15px;
+  
+      &:nth-of-type(2) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 }

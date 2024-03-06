@@ -11,19 +11,19 @@ function InfoBlock() {
     <div className={styles.container}>
       <div className={styles.block}>
         <img src={infoIcon1} alt="Рассрочка" />
-        <p>Рассрочка 0%<br/>до 12 месяцев</p>
+        <p>Рассрочка 0%<br />до 12 месяцев</p>
       </div>
       <div className={styles.block}>
         <img src={infoIcon2} alt="Основание" />
-        <p>Устанавливаем кухни<br/>с 2013 года</p>
+        <p>Устанавливаем кухни с 2013 года</p>
       </div>
       <div className={styles.block}>
         <img src={infoIcon3} alt="Установка" />
-        <p>Бесплатная<br/>установка</p>
+        <p>Бесплатная установка</p>
       </div>
       <div className={styles.block}>
         <img src={infoIcon4} alt="Срок службы" />
-        <p>Срок службы<br/>20 лет</p>
+        <p>Срок службы 20 лет</p>
       </div>
     </div>
   )
