@@ -14,27 +14,61 @@
     flex-direction: column;
     width: 1139px;
     height: 100%;
-    
-    h3 {
-    @include text800($font-size: 48px, $line-height: 1.15);
-    text-transform: none;
-    margin-bottom: 84px;
-    
 
-     &::after {
-      content: 'мы производим?';
-      color: $main-red;
-      padding-bottom: 21px;
-      border-bottom: 6px solid $main-red;
+    h3 {
+      @include text800($font-size: 48px, $line-height: 1.15);
+      text-transform: none;
+      margin-bottom: 84px;
+
+      &::after {
+        content: "мы производим?";
+        color: $main-red;
+        padding-bottom: 21px;
+        border-bottom: 6px solid $main-red;
+      }
+    }
+    .grid_container {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 46px;
+      row-gap: 44px;
     }
   }
-  .grid_container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 46px;
-    row-gap: 44px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    height: 832px;
+    margin: 60px auto 0;
+    overflow: hidden;
+    background: url(../../../images/KitchenCard-wrapper.png);
+
+    .container {
+      width: 100%;
+      padding: 0 30px;
+
+      h3 {
+        @include text800($font-size: 32px, $line-height: 1);
+        text-transform: none;
+        margin-bottom: 64px;
+
+        &::after {
+          content: "мы производим?";
+          color: $main-red;
+          padding-bottom: 24px;
+          border-bottom: 6px solid $main-red;
+        }
+      }
+      .grid_container {
+        display: flex;
+        width: 100%;
+
+        //grid-template-columns: repeat(auto-fill, 323px);
+        column-gap: 30px;
+        overflow: hidden;
+      }
+    }
   }
-  }
-  }
+}
